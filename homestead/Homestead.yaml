@@ -1,0 +1,38 @@
+---
+ip: "192.168.20.10"
+memory: 4096
+cpus: 2
+hostname: emailcamp
+name: emailcamp
+provider: virtualbox
+
+mariadb: true
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: "/home/lubomir/www/email_camp/project"
+      to: "/home/vagrant/project"
+
+sites:
+    - map: emailcamp
+      to: "/home/vagrant/project/public"
+
+databases:
+    - emailcamp
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp

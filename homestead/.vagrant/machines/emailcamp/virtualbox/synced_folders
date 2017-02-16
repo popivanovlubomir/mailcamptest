@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/project":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/project","hostpath":"/home/lubomir/www/email_camp/project","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/lubomir/www/email_camp/homestead","disabled":false,"__vagrantfile":true}}}
